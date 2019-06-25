@@ -1,4 +1,4 @@
-# LeetCode Solutions in Java, Python and C++
+## LeetCode Solutions in Java, Python and C++
 
 
 | #    | Title                                                        | Solution                                                     | Difficulty |
@@ -12,4 +12,5 @@
 | 7    | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Java](https://github.com/shenhuaze/leetcode/blob/master/java/ReverseInteger.java), [Python](https://github.com/shenhuaze/leetcode/blob/master/python/reverse_integer.py), [C++](https://github.com/shenhuaze/leetcode/blob/master/cpp/reverse_integer.cpp) | Easy       |
 | 8    | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Java](https://github.com/shenhuaze/leetcode/blob/master/java/StringToInteger.java), [Python](https://github.com/shenhuaze/leetcode/blob/master/python/string_to_integer.py), [C++](https://github.com/shenhuaze/leetcode/blob/master/cpp/string_to_integer.cpp) | Medium     |
 | 9    | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Java](https://github.com/shenhuaze/leetcode/blob/master/java/PalindromeNumber.java), [Python](https://github.com/shenhuaze/leetcode/blob/master/python/palindrome_number.py), [C++](https://github.com/shenhuaze/leetcode/blob/master/cpp/palindrome_number.cpp) | Easy       |
+| 10   | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Java](https://github.com/shenhuaze/leetcode/blob/master/java/RegularExpressionMatching.java), [Python](https://github.com/shenhuaze/leetcode/blob/master/python/regular_expression_matching.py), [C++](https://github.com/shenhuaze/leetcode/blob/master/cpp/regular_expression_matching.cpp) | Hard       |
 
