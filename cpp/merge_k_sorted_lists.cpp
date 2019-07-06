@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 
 using namespace std;
 
@@ -30,6 +31,7 @@ ListNode* MergeTwoLists(ListNode* l1, ListNode* l2) {
     return dummy->next;
 }
 
+// Solution 1
 ListNode* MergeKLists(vector<ListNode*>& lists) {
     if (lists.empty()) {
         return nullptr;
@@ -45,6 +47,37 @@ ListNode* MergeKLists(vector<ListNode*>& lists) {
     return lists[0];
 }
 
+// Solution 2
+struct comparator{
+    bool operator() (ListNode*& a, ListNode*& b) {
+        return a->val > b->val;
+    }
+};
+
+ListNode* MergeKLists2(vector<ListNode*>& lists) {
+    if (lists.empty()) {
+        return nullptr;
+    }
+    priority_queue<ListNode*, vector<ListNode*>, comparator> heap;
+    for (ListNode* node : lists) {
+        if (node) {
+            heap.push(node);
+        }
+    }
+    ListNode* dummy = new ListNode(0);
+    ListNode* cur = dummy;
+    while (!heap.empty()) {
+        ListNode* node = heap.top();
+        heap.pop();
+        cur->next = node;
+        cur = cur->next;
+        if (node->next) {
+            heap.push(node->next);
+        }
+    }
+    return dummy->next;
+}
+
 int main() {
     ListNode* l1 = new ListNode(1);
     l1->next = new ListNode(4);
@@ -55,7 +88,8 @@ int main() {
     ListNode* l3 = new ListNode(2);
     l3->next = new ListNode(6);
     vector<ListNode*> lists = {l1, l2, l3};
-    ListNode* result = MergeKLists(lists);
+    //ListNode* result = MergeKLists(lists);
+    ListNode* result = MergeKLists2(lists);
     while (result) {
         cout << result->val << " -> ";
         result = result->next;
