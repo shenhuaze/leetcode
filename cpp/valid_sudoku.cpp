@@ -4,6 +4,10 @@
 
 using namespace std;
 
+/**
+ * @author Huaze Shen
+ * @date 2019-07-16
+ */
 bool IsValidRow(vector<vector<char>>& board) {
     int size = board.size();
     for (int i = 0; i < size; i++) {
