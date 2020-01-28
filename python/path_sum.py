@@ -18,16 +18,6 @@ def has_path_sum(root, sum):
 
 
 if __name__ == '__main__':
-    # TreeNode root = new TreeNode(5);
-    #         root.left = new TreeNode(4);
-    #         root.left.left = new TreeNode(11);
-    #         root.left.left.left = new TreeNode(7);
-    #         root.left.left.right = new TreeNode(2);
-    #         root.right = new TreeNode(8);
-    #         root.right.left = new TreeNode(13);
-    #         root.right.right = new TreeNode(4);
-    #         root.right.right.right = new TreeNode(1);
-    #         System.out.println(hasPathSum(root, 22));
     root_ = TreeNode(5)
     root_.left = TreeNode(4)
     root_.left.left = TreeNode(11)
